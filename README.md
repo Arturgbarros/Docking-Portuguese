@@ -125,7 +125,7 @@ Deve ser selecionada a molécula que deseja exportar e essa é a proteína onde 
 ![image](https://github.com/Tutugb/Docking/assets/125391314/dfff6774-ab62-4b83-bf9b-f26ebe8df588)
 
 **OBS1:** Em alguns casos aparecem avisos sobre a questão estrutural da proteína esses só precisam ser aceitos onde não causarão nenhum resultado enviezado nos resultados
-**OBS2:** Salve a proteína no formato PDBqt com um nome sem nenhum caracter especial nem espaço e assim nomeie o arquivo da gridbox igual ao arquivo da proteína no formato PDBqt 
+**OBS2:** Salve a proteína no formato ".pdbqt" **(necessário escrever isso no nome do arquivo)** com um nome sem nenhum caracter especial nem espaço e assim nomeie o arquivo da gridbox igual ao arquivo da proteína no formato PDBqt
 
 # Preparo da molécula (ligante)
 A molécula a ser preparada nesse caso pode ser um inibidor, fármaco, toxina que conheça a estrutura química em pelo menor formato 2D
@@ -169,3 +169,31 @@ Para essa etapa é necessário o software MGLTools onde faz a conversão do form
 ![image](https://github.com/Tutugb/Docking/assets/125391314/f63dc7d6-7bd6-4a82-bf78-57e2772292b1)
 
 # Docking
+Antes de tudo caso não esteja trabalhando no sistema linux é necessário baixar a extensão deste no windows
+### Criando e adicionando arquivos nas pastas para docking 
+Primeiro de tudo é necessário criar 4 pastas com os nomes : "receptores", "ligantes", "grid", "out"
+**receceptores** -> arquivo(s) PDBqt da(s) proteína(s)
+**ligantes** -> arquivo(s) da(s) molécula(s)
+**grid** -> arquivo(s) da(s) gridbox(s)
+**out** -> pasta de saída dos resultados
+### Arquivo vina.sh
+Para o docking ser realizado na metodologia Autodock Vina deve existir o arquivo vina.sh aqui disponibilizado
+### Rodando Docking molecular
+#### Instalando vina
+```bash
+sudo apt-get install autodock-vina
+```
+#### Iniciando docking
+```bash
+nohup sh vina.sh &
+```
+* Aqui é criado um arquivo com o nome "nohup.out" onde é ai que são armazenado os resultados do docking molecular
+#### visualizando resultados energéticos
+```bash
+cat nohup.out
+```
+![image](https://github.com/Tutugb/Docking/assets/125391314/26260eae-428c-4af4-9de1-3fbad3e337a0)
+
+* visualizando o arquivo "nohup.out" é possível avaliar as melhores energia de ligação onde a melhor é aquela com a menor energia e RMSD onde são nesse caso é a primeira posição com uma energia de  -6.507 Kcal/mol e 0 de RMSD
+
+#### Visualizando resultados gráficos 
