@@ -106,7 +106,9 @@ Quando a protéina estiver toda envolta pela gridbox como abaixo é preciso salv
 ![image](https://github.com/Tutugb/Docking/assets/125391314/d1da240e-239b-440b-8175-c0739a74630d)
 ##### Escolhendo local onde os arquivos serão salvos localmente
 ![image](https://github.com/Tutugb/Docking/assets/125391314/c13995fe-6a51-44c7-86bd-c7a1094b8801)
+
 Qualquer escrita na opção "Startup directory" deve ser exluida e depois clicar em "set" e em seguida "browse" para que assim seja possível escolher o local onde deseja salvar os seus arquivos
+
 ![image](https://github.com/Tutugb/Docking/assets/125391314/288f9079-e68a-4e81-b5f0-839673dce7c4)
 #### Salvando arquivo da gridbox
 
@@ -208,21 +210,35 @@ Necessário copiar arquivos do resultado do docking para as pasta criadas antes 
 ![image](https://github.com/Tutugb/Docking/assets/125391314/7ec68492-12b1-4dff-8b59-16f1d860197f)
 ###### Proteína surface 
 * O formata surface é fácil de visualizar de a molécula se ligou em algum sítio ou não da proteína, onde assim verifica se a ligação de menor energia realmente é melhor mesmo ou não.
+
 **1.** comando para mudar para surface
+
 ![image](https://github.com/Tutugb/Docking/assets/125391314/614e2c81-dc14-4bc2-9f1e-adfab67ff72b)
+
 **2.** Resultado
+
 ![image](https://github.com/Tutugb/Docking/assets/125391314/af272a5d-04c0-4f2e-9a3c-d84167724ed4)
+
 ###### Mudando cor da proteína 
 * A cor que escolher para a proteína é estritamente pessoal, porém aqui está como fazer a mudança
+
 ![image](https://github.com/Tutugb/Docking/assets/125391314/2d2133b7-83d6-4f55-99da-b0716ab6ff5d)
+
 * Resultado (assim é possível visualizar de forma mais clara a molécula ligada a proteína) 
+
 ![image](https://github.com/Tutugb/Docking/assets/125391314/36cc17ea-0046-4632-9e06-0152a891f2b4)
+
 ###### Interações de Hidrogênio entre molécula e proteína
 * Com esse parãmetro é possível analisar se a ligação entre a molécula e a proteína é forte ou não por ter mais ou menos interações de hidrogênio
+
 **1.** comando
+
 ![image](https://github.com/Tutugb/Docking/assets/125391314/25e34d39-016c-4729-bc09-ca07a34c6be5)
+
 **2.** Resultado
+
 ![image](https://github.com/Tutugb/Docking/assets/125391314/5f246298-0edd-4e32-b4ba-65619fda54ce)
+
 * As linhas pontilhas são todas as ligações de hidrogênio entre a proteína e a molécula.
 
 
