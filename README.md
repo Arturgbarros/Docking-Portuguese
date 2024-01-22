@@ -179,6 +179,7 @@ Primeiro de tudo é necessário criar 4 pastas com os nomes : "receptores", "lig
 ### Arquivo vina.sh
 Para o docking ser realizado na metodologia Autodock Vina deve existir o arquivo vina.sh aqui disponibilizado
 ### Rodando Docking molecular
+todas as pastas criadas devem ser tranferidas para a extensão do linux caso não esteja trabalhando no sistema operacional linux de modo que fique mais organizado a geração dos resultados 
 #### Instalando vina
 ```bash
 sudo apt-get install autodock-vina
@@ -197,3 +198,41 @@ cat nohup.out
 * visualizando o arquivo "nohup.out" é possível avaliar as melhores energia de ligação onde a melhor é aquela com a menor energia e RMSD onde são nesse caso é a primeira posição com uma energia de  -6.507 Kcal/mol e 0 de RMSD
 
 #### Visualizando resultados gráficos 
+Toda visualização gráfica é feita usando o pymol, onde aqui estão apenas algumas forma de visualizar, porém existem inúmeras que são configuradas de forma totalmente pessoal
+##### Abrindo arquivos no pymol
+Necessário copiar arquivos do resultado do docking para as pasta criadas antes do docking realizado na extensão do linux
+###### Abrir arquivo da proteína em formato PDBqt da pasta "receptores"
+![image](https://github.com/Tutugb/Docking/assets/125391314/de2f241e-eb8f-4f92-a893-0bfe8276f20a)
+###### Abrir arquivo do ligante com a proteína da pasta "out"
+* Ao abrir esse arquivo a molécula já será posicionada no local e com a conformação de melhor posição
+![image](https://github.com/Tutugb/Docking/assets/125391314/7ec68492-12b1-4dff-8b59-16f1d860197f)
+###### Proteína surface 
+* O formata surface é fácil de visualizar de a molécula se ligou em algum sítio ou não da proteína, onde assim verifica se a ligação de menor energia realmente é melhor mesmo ou não.
+**1.** comando para mudar para surface
+![image](https://github.com/Tutugb/Docking/assets/125391314/614e2c81-dc14-4bc2-9f1e-adfab67ff72b)
+**2.** Resultado
+![image](https://github.com/Tutugb/Docking/assets/125391314/af272a5d-04c0-4f2e-9a3c-d84167724ed4)
+###### Mudando cor da proteína 
+* A cor que escolher para a proteína é estritamente pessoal, porém aqui está como fazer a mudança
+![image](https://github.com/Tutugb/Docking/assets/125391314/2d2133b7-83d6-4f55-99da-b0716ab6ff5d)
+* Resultado (assim é possível visualizar de forma mais clara a molécula ligada a proteína) 
+![image](https://github.com/Tutugb/Docking/assets/125391314/36cc17ea-0046-4632-9e06-0152a891f2b4)
+###### Interações de Hidrogênio entre molécula e proteína
+* Com esse parãmetro é possível analisar se a ligação entre a molécula e a proteína é forte ou não por ter mais ou menos interações de hidrogênio
+**1.** comando
+![image](https://github.com/Tutugb/Docking/assets/125391314/25e34d39-016c-4729-bc09-ca07a34c6be5)
+**2.** Resultado
+![image](https://github.com/Tutugb/Docking/assets/125391314/5f246298-0edd-4e32-b4ba-65619fda54ce)
+* As linhas pontilhas são todas as ligações de hidrogênio entre a proteína e a molécula.
+
+
+
+
+
+
+
+
+
+
+
+
