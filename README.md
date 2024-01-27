@@ -1,13 +1,10 @@
 # Docking Molecular
+![image](https://github.com/Tutugb/Docking/assets/125391314/4bfce3d3-e88f-4a31-b5e5-ad408352ed03) O Docking Molecular é uma técnica computacional fundamental na área de química e biologia, utilizada para prever a interação entre moléculas, como proteínas e ligantes. Este processo é crucial na descoberta de novos fármacos, permitindo analisar e otimizar as ligações entre substâncias químicas de interesse.
 
 # Sites
 * Uniprot
 ```python
 https://www.uniprot.org/
-```
-* Alphafold2
-```python
-https://colab.research.google.com/github/sokrypton/ColabFold/blob/v1.2.0/AlphaFold2.ipynb
 ```
 * Pubchem
 ```python
@@ -29,7 +26,7 @@ https://www.rcsb.org/
 ```python
 https://www.cheminfo.org/Chemistry/Cheminformatics/FormatConverter/index.html
 ```
-* Avogadrp
+* Avogadro
 ```python
 https://avogadro.cc/
 ```
